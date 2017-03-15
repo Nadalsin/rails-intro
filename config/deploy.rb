@@ -39,3 +39,9 @@ namespace :deploy do
     end
   end
 end
+
+#source the environnement variable
+prefix = "set -a; . ~/.envfile; set +a;"
+[:bundle, :rake, :rails].each do |cmd|
+  SSHKit.config.command_map.prefix[cmd].push(prefix)
+end
