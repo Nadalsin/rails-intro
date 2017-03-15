@@ -8,7 +8,7 @@ set :repo_url, "git@github.com:Nadalsin/rails-intro.git"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 set :branch, "the-end"
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/aurelie/www/rails-intro/"
+set :deploy_to, "/home/steve/www/rails-intro/"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
